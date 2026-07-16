@@ -1,0 +1,116 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.world {
+    position: relative;
+    border: 2px solid black;
+    background: #d7f4d2;
+    overflow: hidden;
+}
+
+.grass,
+.herbivore,
+.predator {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+}
+
+.herbivore,
+.predator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-size: 6px;
+    font-weight: bold;
+    user-select: none;
+}
+
+.grass {
+    width: 6px;
+    height: 6px;
+    background: green;
+}
+
+.herbivore {
+    width: 12px;
+    height: 12px;
+    background: blue;
+}
+
+.predator {
+    width: 14px;
+    height: 14px;
+    background: red;
+}
+
+body { 
+    margin: 0;
+    font-family: Arial;
+    background: #5c5b6d;
+}
+
+.layout {
+    display: flex;
+    height: 100vh;
+}
+
+.menu {
+    width: 280px;
+    padding: 20px;
+    background: rgb(59, 59, 68);
+    border-right: 2px solid #ccc;
+    overflow-y: auto;
+    color: white;
+}
+
+.menu label {
+    display: block;
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+.menu input {
+    width: 100%;
+    padding: 4px;
+    margin-top: 2px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+}
+
+.menu button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.world {
+    margin: 20px;
+    position: relative;
+    border: 2px solid black;
+    background: #d7f4d2;
+    overflow: hidden;
+    transform-origin: top left;
+}
+
+.world-wrapper {
+    flex: 1;
+    overflow: auto;
+    padding: 20px;
+}
+
+.graph {
+    width: 100%;
+    height: 120px;
+    background: white;
+    border: 1px solid #aaa;
+    margin-bottom: 15px;
+}
